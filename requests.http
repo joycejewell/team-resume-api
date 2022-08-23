@@ -1,0 +1,2 @@
+### Students Show
+GET http://localhost:3000/students/1.json
