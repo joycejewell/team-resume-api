@@ -10,23 +10,24 @@ DELETE http://localhost:3000/students/1.json
 ### Students Create
 POST http://localhost:3000/students.json
 Content-Type: application/json
-{
-    "first_name": "a",
-    "last_name": "a",
-    "email": "a",
-    "phone_number": "a",
-    "short_bio": "a",
-    "linkedin_url": "a",
-    "twitter_handle": "a",
-    "personal_blog_url": "a",
-    "online_resume_url": "a",
-    "github_url": "a",
-    "photo": "a"
+
+{  "first_name": "a",
+   "last_name": "a",
+   "email": "a",
+   "phone_number": "a",
+   "short_bio": "a",
+   "linkedin_url": "a",
+   "twitter_handle": "a",
+   "personal_blog_url": "a",
+   "online_resume_url": "a",
+   "github_url": "a",
+   "photo": "a"
 }
 
 ### Student Update 
 PATCH http://localhost:3000/students/2.json
 Content-Type: application/json
+    
     {"first_name": "b",
     "last_name": "b",
     "email": "a",
@@ -40,3 +41,29 @@ Content-Type: application/json
     "photo": "b"
     }
  
+### Skills index action
+GET http://localhost:3000/skills.json
+
+
+### skills show action
+GET http://localhost:3000/skills/1.json
+Content-Type: application/json
+
+### Skills create action
+POST http://localhost:3000/skills.json
+Content-Type: application/json 
+
+{
+  "student_id": 2,
+  "skills_name": "create test"
+  }
+
+### Skills Update 
+PATCH http://localhost:3000/skills/2.json
+Content-Type: application/json
+
+{
+  "student_id": 100,
+  "skills_name": "updated name"
+}
+
