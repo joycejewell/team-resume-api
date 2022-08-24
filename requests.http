@@ -67,3 +67,68 @@ Content-Type: application/json
   "skills_name": "updated name"
 }
 
+### experiences Show
+GET http://localhost:3000/experiences/1.json
+
+### experiences index action
+GET http://localhost:3000/experiences.json
+
+### experience Destroy
+DELETE http://localhost:3000/experiences/1.json
+
+### experiences Create
+POST http://localhost:3000/experiences.json
+Content-Type: application/json
+{
+    "student_id": 1,
+    "start_date": "June 1",
+    "end_date": "May 30",
+    "company_name": "Record University",
+    "details": "yes please",
+}
+
+### experience Update 
+PATCH http://localhost:3000/experiences/2.json
+Content-Type: application/json
+    {
+    "student_id": 1,
+    "start_date": "June 1",
+    "end_date": "May 30",
+    "company_name": "Record University",
+    "details": "yes please",
+    }
+
+
+
+### educations Show
+GET http://localhost:3000/educations/1.json
+
+### educations index action
+GET http://localhost:3000/educations.json
+
+### education Destroy
+DELETE http://localhost:3000/educations/1.json
+
+### educations Create
+POST http://localhost:3000/educations.json
+Content-Type: application/json
+{
+    "student_id": 1,
+    "start_date": "June 1",
+    "end_date": "May 30",
+    "degree": "Vinyl Stuff",
+    "university_name": "Record University",
+    "details": "yes please",
+}
+
+### education Update 
+PATCH http://localhost:3000/educations/2.json
+Content-Type: application/json
+    {
+    "student_id": 1,
+    "start_date": "June 1",
+    "end_date": "May 30",
+    "degree": "Vinyl Stuff",
+    "university_name": "Record University",
+    "details": "yes please",
+    }

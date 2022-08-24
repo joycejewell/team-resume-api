@@ -5,3 +5,8 @@ Student.create!(first_name: "test 2", last_name: "test 2", email: "", phone_numb
 Skill.create!(student_id: 2, skills_name: "Test Ruby")
 Skill.create!(student_id: 3, skills_name: "html")
 Skill.create!(student_id: 4, skills_name: "teaching")
+
+Experience.create!(student_id: 2, start_date: "June 1", end_date: "May 30", company_name: "Vinyl Spins", details: "lets learn")
+
+
+Education.create!(student_id: 1, start_date: "June 1", end_date: "May 30", degree: "Music Data",university_name: "Vinyl University", details: "lets learn" )
