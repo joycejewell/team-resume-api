@@ -1,10 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+Student.create!(first_name: "DJ Jazzy", last_name: "Jones", email: "djj@gmail.com", phone_number: "1234567890", short_bio: "I spin vinyl", linkedin_url: "a", twitter_handle: "a", personal_blog_url: "a", online_resume_url: "a", github_url: "a", photo: "a")
 
-
-#making a change for pull request
+Student.create!(first_name: "test 2", last_name: "test 2", email: "", phone_number: "", short_bio: "", linkedin_url: "", twitter_handle: "", personal_blog_url: "", online_resume_url: "", github_url: "", photo: "")

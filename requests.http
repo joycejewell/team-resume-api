@@ -1,0 +1,42 @@
+### Students Show
+GET http://localhost:3000/students/1.json
+
+### Students index action
+GET http://localhost:3000/students.json
+
+### Student Destroy
+DELETE http://localhost:3000/students/1.json
+
+### Students Create
+POST http://localhost:3000/students.json
+Content-Type: application/json
+{
+    "first_name": "a",
+    "last_name": "a",
+    "email": "a",
+    "phone_number": "a",
+    "short_bio": "a",
+    "linkedin_url": "a",
+    "twitter_handle": "a",
+    "personal_blog_url": "a",
+    "online_resume_url": "a",
+    "github_url": "a",
+    "photo": "a"
+}
+
+### Student Update 
+PATCH http://localhost:3000/students/2.json
+Content-Type: application/json
+    {"first_name": "b",
+    "last_name": "b",
+    "email": "a",
+    "phone_number": "b",
+    "short_bio": "b",
+    "linkedin_url": "b",
+    "twitter_handle": "b",
+    "personal_blog_url": "b",
+    "online_resume_url": "b",
+    "github_url": "b",
+    "photo": "b"
+    }
+ 
