@@ -36,7 +36,7 @@ class EducationsController < ApplicationController
 
   def update
     educations_id = params["id"]
-    education = Education.find_by(id: educations_id)
+    education = Education.find_by(id:educations_id)
     education.student_id = params[:student_id] || education.student_id
     education.start_date = params[:start_date] || education.start_date
     education.end_date = params[:end_date] || education.end_date
