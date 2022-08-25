@@ -26,18 +26,22 @@ class SkillsController < ApplicationController
 
   def update
     skills_id = params["id"]
-    skill = Skill.find_by(id:skills_id)
-    skill.student_id = params[:student_id] || skills.student_id
-    skill.skills_name = params[:skills_name] || skills.skills_name
+    skill = Skill.find_by(id: skills_id)
+    skill.student_id = params[:student_id] || skill.student_id
+    skill.skills_name = params[:skills_name] || skill.skills_name
 
     if skill.save
       render json: skill.as_json
     else
-      render json: {errors: skill.error.full_messages}, status: 422
+      render json: {errors: skill.errors.full_messages}, status: 422
     end
   end 
 
   def destroy
+    skills_id = params["id"]
+    skill = Skill.find_by(id: skills_id)
+    skill.destroy
+    render json: {message: "deleted skills"}
   end 
 
 end
