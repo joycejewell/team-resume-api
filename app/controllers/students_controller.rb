@@ -6,11 +6,16 @@ class StudentsController < ApplicationController
 
     # @students = students.order(:id => :desc)
 
+  # def show
+  #   @student = Student.find_by(id: params[:id])
+  #   render json: @student.as_json
+  # end
+
   def show
     @student = Student.find_by(id: params[:id])
-    render json: @student.as_json
+    render json: @student.as_json(methods: [:skills, :experience, :education, :capstones])
   end
-
+  
   def create
     student = Student.new(
       first_name: params[:first_name],
