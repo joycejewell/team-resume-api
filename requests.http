@@ -99,10 +99,10 @@ Content-Type: application/json
 
     {
     "student_id": 2,
-    "start_date": "June 1",
+    "start_date": "June 11",
     "end_date": "May 31",
     "company_name": "Record University",
-    "details": "yes please",
+    "details": "yes please"
     }
 
 
@@ -130,16 +130,16 @@ Content-Type: application/json
 }
 
 ### education Update 
-PATCH http://localhost:3000/education/2.json
+PATCH http://localhost:3000/educations/2.json
 Content-Type: application/json
 
     {
-    "student_id": 1,
+    "student_id": 2,
     "start_date": "June 1",
     "end_date": "May 30",
     "degree": "Vinyl Stuff",
     "university_name": "Record University",
-    "details": "yes please",
+    "details": "yes please"
     }
 
 
