@@ -10,3 +10,7 @@ Experience.create!(student_id: 2, start_date: "June 1", end_date: "May 30", comp
 
 
 Education.create!(student_id: 1, start_date: "June 1", end_date: "May 30", degree: "Music Data",university_name: "Vinyl University", details: "lets learn" )
+
+Capstone.create!(student_id: 1, name: "test", description: "test", url: "test", screenshot: "test")
+Capstone.create!(student_id: 2, name: "abc", description: "abc", url: "abc", screenshot: "abc")
+Capstone.create!(student_id: 3, name: "sadjfkldsa", description: "asdfdsa", url: "ljsdfasda", screenshot: "abc")

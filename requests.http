@@ -1,8 +1,10 @@
-### Students Show
-GET http://localhost:3000/students/1.json
+
 
 ### Students index action
 GET http://localhost:3000/students.json
+
+### Students Show
+GET http://localhost:3000/students/1.json
 
 ### Student Destroy
 DELETE http://localhost:3000/students/1.json
@@ -59,13 +61,16 @@ Content-Type: application/json
   }
 
 ### Skills Update 
-PATCH http://localhost:3000/skills/2.json
+PATCH http://localhost:3000/skills/1.json
 Content-Type: application/json
 
 {
-  "student_id": 100,
+  "student_id": 2,
   "skills_name": "updated name"
 }
+
+### Skills Delete
+DELETE http://localhost:3000/skills/1.json
 
 ### experiences Show
 GET http://localhost:3000/experiences/1.json
@@ -158,3 +163,35 @@ Content-Type: application/json
   "email": "test@test.com",
   "password": "password"
 }
+### Capstones index action
+GET http://localhost:3000/capstones.json
+
+### Capstones Show
+GET http://localhost:3000/capstones/1.json
+
+### Capstones create action
+POST http://localhost:3000/capstones.json
+Content-Type: application/json 
+
+{
+  "student_id": 1,
+  "name": "joyce",
+  "description": "create",
+  "url": "create",
+  "screenshot": "screenshot create"
+  }
+
+### Capstone Update 
+PATCH http://localhost:3000/capstones/1.json
+Content-Type: application/json
+
+{
+  "student_id": 1,
+  "name": "new name",
+  "description": "new description",
+  "url": "new url",
+  "screenshot": "new screenshot"
+}
+
+### Capstone Destroy
+DELETE http://localhost:3000/capstones/2.json
