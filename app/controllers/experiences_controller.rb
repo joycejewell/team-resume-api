@@ -1,11 +1,11 @@
-class ExperienceController < ApplicationController
+class ExperiencesController < ApplicationController
   def index
     @experiences = Experience.all
     render json: @experiences.as_json
   end
 
   def show
-    @experience = experience.find_by(id: params[:id])
+    @experience = Experience.find_by(id: params[:id])
     render json: @experience.as_json
   end
 
@@ -49,5 +49,4 @@ class ExperienceController < ApplicationController
       render json: {errors: experience.error.full_messages}, status: 422
     end
   end
-
 end

@@ -1,4 +1,4 @@
-class EducationController < ApplicationController
+class EducationsController < ApplicationController
   def index
     @educations = Education.all
     render json: @educations.as_json
@@ -51,5 +51,4 @@ class EducationController < ApplicationController
       render json: {errors: education.error.full_messages}, status: 422
     end
   end
-
 end

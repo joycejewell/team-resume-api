@@ -86,11 +86,11 @@ POST http://localhost:3000/experiences.json
 Content-Type: application/json
 
 {
-    "student_id": 1,
+    "student_id": 2,
     "start_date": "June 1",
     "end_date": "May 30",
     "company_name": "Record University",
-    "details": "yes please",
+    "details": "yes please"
 }
 
 ### experience Update 
@@ -98,9 +98,9 @@ PATCH http://localhost:3000/experiences/2.json
 Content-Type: application/json
 
     {
-    "student_id": 1,
+    "student_id": 2,
     "start_date": "June 1",
-    "end_date": "May 30",
+    "end_date": "May 31",
     "company_name": "Record University",
     "details": "yes please",
     }
@@ -108,16 +108,16 @@ Content-Type: application/json
 
 
 ### educations Show
-GET http://localhost:3000/educations/1.json
+GET http://localhost:3000/education/1.json
 
 ### educations index action
-GET http://localhost:3000/educations.json
+GET http://localhost:3000/education.json
 
 ### education Destroy
-DELETE http://localhost:3000/educations/1.json
+DELETE http://localhost:3000/education/1.json
 
 ### educations Create
-POST http://localhost:3000/educations.json
+POST http://localhost:3000/education.json
 Content-Type: application/json
 
 {
@@ -130,7 +130,7 @@ Content-Type: application/json
 }
 
 ### education Update 
-PATCH http://localhost:3000/educations/2.json
+PATCH http://localhost:3000/education/2.json
 Content-Type: application/json
 
     {
@@ -143,6 +143,26 @@ Content-Type: application/json
     }
 
 
+
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
+}
 ### Capstones index action
 GET http://localhost:3000/capstones.json
 
