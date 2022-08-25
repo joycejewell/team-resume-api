@@ -14,18 +14,18 @@ Rails.application.routes.draw do
   delete "skills/:id" => "skills#destroy"
   
   #experience
-  get "/experience" => "experience#index"
-  get "/experience/:id" => "experience#show"
-  post "/experience" => "experience#create"
-  patch "experience/:id" => "experience#update"
-  delete "experience/:id" => "experience#destroy"
+  get "/experiences" => "experiences#index"
+  get "/experiences/:id" => "experiences#show"
+  post "/experiences" => "experiences#create"
+  patch "experiences/:id" => "experiences#update"
+  delete "experiences/:id" => "experiences#destroy"
 
   #education
-  get "/education" => "education#index"
-  get "/education/:id" => "education#show"
-  post "/education" => "education#create"
-  patch "education/:id" => "education#update"
-  delete "education/:id" => "education#destroy"
+  get "/educations" => "educations#index"
+  get "/educations/:id" => "educations#show"
+  post "/educations" => "educations#create"
+  patch "educations/:id" => "educations#update"
+  delete "educations/:id" => "educations#destroy"
 
   #users
   post "/users" => "users#create"
